@@ -1,7 +1,11 @@
 aid: belden
-url: https://raw.githubusercontent.com/api-evangelist/belden/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/belden/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.belden.com
+description: >-
+  We design, manufacture and market networking, connectivity, cable products and solutions
+  for industrial automation, smart buildings and broadcast markets.
