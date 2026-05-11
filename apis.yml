@@ -107,6 +107,11 @@ common:
         description: >-
           SNMP v1, v2c, and v3 support across Hirschmann industrial switch product
           lines for integration with network management systems and monitoring tools.
+  - type: Integrations
+    url: https://www.belden.com/partners
+integrations:
+  - name: Distributors
+  - name: Ecosystem Partners
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
