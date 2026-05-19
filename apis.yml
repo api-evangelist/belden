@@ -26,6 +26,8 @@ tags:
   - Smart Buildings
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/beldeninc
   - type: Website
     url: https://www.belden.com
   - type: Documentation
