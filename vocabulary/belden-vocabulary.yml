@@ -1,0 +1,173 @@
+vocabulary:
+  name: Belden Industrial Networking Vocabulary
+  description: >-
+    Key terms and concepts from the Belden / Hirschmann industrial networking,
+    connectivity, and IIoT product ecosystem, covering industrial Ethernet,
+    network management, OT cybersecurity, and cable/connectivity products.
+  version: "1.0.0"
+  terms:
+
+    - term: Industrial Ethernet
+      definition: >-
+        Ethernet networking adapted for industrial environments, designed to
+        withstand extreme temperatures, vibration, EMI, and dust while meeting
+        real-time deterministic communication requirements of factory automation
+        and process control systems.
+      tags:
+        - networking
+        - industrial-automation
+        - protocols
+
+    - term: IIoT
+      definition: >-
+        Industrial Internet of Things — the application of IoT technologies to
+        industrial settings, enabling sensors, actuators, PLCs, and edge devices
+        to share operational data with enterprise and cloud systems for analytics,
+        predictive maintenance, and process optimization.
+      tags:
+        - iot
+        - industry-4.0
+        - connectivity
+
+    - term: IO-Link
+      definition: >-
+        An international point-to-point serial communication standard (IEC 61131-9)
+        for connecting smart field devices such as sensors and actuators to an
+        IO-Link master, enabling bidirectional data exchange, parameter assignment,
+        and diagnostics over standard unshielded cables.
+      tags:
+        - protocols
+        - field-devices
+        - sensors
+
+    - term: OPC UA
+      definition: >-
+        OPC Unified Architecture — a platform-independent, service-oriented
+        architecture for industrial data exchange (IEC 62541) providing secure,
+        reliable communication between PLCs, SCADA systems, historian servers,
+        and cloud applications across different vendors.
+      tags:
+        - protocols
+        - interoperability
+        - industrial-automation
+
+    - term: MQTT
+      definition: >-
+        Message Queuing Telemetry Transport — a lightweight publish-subscribe
+        messaging protocol designed for constrained devices and low-bandwidth,
+        high-latency networks, widely used in IIoT to transmit sensor data to
+        cloud brokers and analytics platforms.
+      tags:
+        - protocols
+        - iot
+        - messaging
+
+    - term: SNMP
+      definition: >-
+        Simple Network Management Protocol — an application-layer protocol used
+        for monitoring and managing network devices. Hirschmann industrial switches
+        support SNMPv1, v2c, and v3 for integration with network management systems
+        such as Industrial HiVision.
+      tags:
+        - protocols
+        - network-management
+        - monitoring
+
+    - term: HiOS
+      definition: >-
+        Hirschmann Industrial Operating System — the firmware platform running on
+        Hirschmann industrial switches and routers, providing CLI, SNMP, and REST
+        API management interfaces for device configuration, monitoring, and
+        diagnostic operations.
+      tags:
+        - firmware
+        - hirschmann
+        - network-management
+
+    - term: VLAN
+      definition: >-
+        Virtual Local Area Network — a logical subdivision of a physical network
+        at the data link layer (IEEE 802.1Q), used in industrial networks to
+        isolate traffic between different control zones, increase security, and
+        reduce broadcast domains.
+      tags:
+        - networking
+        - segmentation
+        - security
+
+    - term: OT Network
+      definition: >-
+        Operational Technology Network — the communication infrastructure
+        connecting industrial control systems (ICS), PLCs, RTUs, SCADA servers,
+        and field devices in manufacturing, utilities, and critical infrastructure,
+        requiring high availability and specialized cybersecurity measures.
+      tags:
+        - industrial-automation
+        - cybersecurity
+        - infrastructure
+
+    - term: Single Pair Ethernet
+      definition: >-
+        SPE (IEEE 802.3cg) — a variant of Ethernet using a single twisted pair
+        of conductors to deliver data rates up to 10 Mbps at distances up to
+        1000 m, with optional Power over Data Lines (PoDL), designed to connect
+        field-level sensors and actuators directly to an Ethernet network.
+      tags:
+        - connectivity
+        - field-devices
+        - ethernet
+
+    - term: Industrial Firewall
+      definition: >-
+        A network security device specifically designed for OT/ICS environments,
+        providing stateful packet inspection, deep packet inspection for industrial
+        protocols (Modbus, EtherNet/IP, PROFINET), and zone/conduit segmentation
+        per IEC 62443 security standards.
+      tags:
+        - cybersecurity
+        - ot-security
+        - networking
+
+    - term: TSN
+      definition: >-
+        Time-Sensitive Networking — a set of IEEE 802.1 standards that add
+        deterministic latency and bandwidth guarantees to standard Ethernet,
+        enabling the convergence of IT and OT traffic on a single network
+        for time-critical industrial applications.
+      tags:
+        - networking
+        - real-time
+        - protocols
+
+    - term: Managed Switch
+      definition: >-
+        A network switch that provides administrative control over network traffic,
+        including VLAN configuration, QoS, port mirroring, RSTP/MSTP spanning tree,
+        and SNMP management. Hirschmann managed switches are ruggedized for DIN-rail
+        or rack-mount installation in industrial cabinets.
+      tags:
+        - hardware
+        - networking
+        - hirschmann
+
+    - term: Signal Transmission
+      definition: >-
+        The conveyance of analog or digital signals over cable or fiber optic
+        media. Belden's cable and connectivity products are engineered for high-
+        fidelity signal transmission in broadcast, enterprise, and industrial
+        applications, with specific constructions for RF, audio, video, and data.
+      tags:
+        - cable
+        - connectivity
+        - broadcast
+
+    - term: Industrial HiVision
+      definition: >-
+        Belden's network management software for configuring, monitoring, and
+        managing SNMP-enabled devices across multi-vendor industrial networks.
+        Provides topology discovery, fault management, and configuration backup
+        for Hirschmann and third-party network infrastructure.
+      tags:
+        - software
+        - network-management
+        - monitoring

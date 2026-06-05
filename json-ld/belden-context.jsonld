@@ -1,0 +1,179 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "owl": "https://www.w3.org/2002/07/owl#",
+    "xsd": "https://www.w3.org/2001/XMLSchema#",
+    "skos": "https://www.w3.org/2004/02/skos/core#",
+    "ssn": "https://www.w3.org/ns/ssn/",
+    "sosa": "https://www.w3.org/ns/sosa/",
+    "iot": "https://iotschema.org/",
+    "industr": "https://w3id.org/industry#",
+
+    "Belden": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    },
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "description": "schema:description",
+    "industry": "schema:industry",
+    "foundingDate": "schema:foundingDate",
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+
+    "IndustrialSwitch": {
+      "@id": "industr:IndustrialSwitch",
+      "@type": "@id"
+    },
+    "ManagedSwitch": {
+      "@id": "industr:ManagedSwitch",
+      "@type": "@id"
+    },
+    "NetworkDevice": {
+      "@id": "schema:Device",
+      "@type": "@id"
+    },
+    "IOLinkMaster": {
+      "@id": "industr:IOLinkMaster",
+      "@type": "@id"
+    },
+    "Sensor": {
+      "@id": "sosa:Sensor",
+      "@type": "@id"
+    },
+    "Actuator": {
+      "@id": "sosa:Actuator",
+      "@type": "@id"
+    },
+
+    "deviceId": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "ipAddress": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "macAddress": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "firmwareVersion": {
+      "@id": "schema:softwareVersion",
+      "@type": "xsd:string"
+    },
+    "portCount": {
+      "@id": "schema:numberOfItems",
+      "@type": "xsd:integer"
+    },
+    "portStatus": {
+      "@id": "industr:portStatus",
+      "@type": "xsd:string"
+    },
+    "vlan": {
+      "@id": "industr:vlan",
+      "@type": "xsd:integer"
+    },
+    "spanningTree": {
+      "@id": "industr:spanningTreeProtocol",
+      "@type": "xsd:string"
+    },
+    "snmpCommunity": {
+      "@id": "industr:snmpCommunity",
+      "@type": "xsd:string"
+    },
+    "snmpVersion": {
+      "@id": "industr:snmpVersion",
+      "@type": "xsd:string"
+    },
+
+    "OpcUaNode": {
+      "@id": "industr:OpcUaNode",
+      "@type": "@id"
+    },
+    "nodeId": {
+      "@id": "industr:nodeId",
+      "@type": "xsd:string"
+    },
+    "namespaceUri": {
+      "@id": "industr:namespaceUri",
+      "@type": "@id"
+    },
+    "dataValue": {
+      "@id": "sosa:hasSimpleResult"
+    },
+    "timestamp": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:dateTime"
+    },
+
+    "MqttTopic": {
+      "@id": "iot:Topic",
+      "@type": "@id"
+    },
+    "topicPath": {
+      "@id": "iot:topicPath",
+      "@type": "xsd:string"
+    },
+    "qos": {
+      "@id": "iot:qualityOfService",
+      "@type": "xsd:integer"
+    },
+    "retain": {
+      "@id": "iot:retain",
+      "@type": "xsd:boolean"
+    },
+
+    "Firewall": {
+      "@id": "industr:Firewall",
+      "@type": "@id"
+    },
+    "FirewallRule": {
+      "@id": "industr:FirewallRule",
+      "@type": "@id"
+    },
+    "allowedProtocols": {
+      "@id": "industr:allowedProtocols",
+      "@type": "xsd:string"
+    },
+    "networkSegment": {
+      "@id": "industr:networkSegment",
+      "@type": "xsd:string"
+    },
+    "CableProduct": {
+      "@id": "schema:Product",
+      "@type": "@id"
+    },
+    "conductorType": {
+      "@id": "industr:conductorType",
+      "@type": "xsd:string"
+    },
+    "shieldType": {
+      "@id": "industr:shieldType",
+      "@type": "xsd:string"
+    },
+    "impedance": {
+      "@id": "industr:impedance",
+      "@type": "xsd:string"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://www.belden.com",
+      "@type": "schema:Organization",
+      "schema:name": "Belden Inc.",
+      "schema:url": "https://www.belden.com",
+      "schema:description": "Belden designs, manufactures, and markets networking, connectivity, and cable products for industrial automation, smart buildings, and broadcast markets.",
+      "schema:industry": "Industrial Networking and Connectivity",
+      "schema:sameAs": [
+        "https://www.linkedin.com/company/beldeninc"
+      ]
+    }
+  ]
+}
