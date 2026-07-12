@@ -27,6 +27,8 @@ tags:
   - Fortune 1000
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/belden-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/beldeninc
   - type: Website
