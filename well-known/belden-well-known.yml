@@ -1,0 +1,220 @@
+generated: '2026-09-18'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows (registrable domain, www,
+  the Hirschmann docs host, the Belden Horizon console host, the product catalog host)
+hit_count: 0
+note: 'No named discovery path returned a real document on any host. belden.com 302s every path to www.belden.com,
+  where /.well-known/* paths answer 404 (the site is otherwise behind a Cloudflare managed challenge for crawlers,
+  which is an edge policy and not a served document). www.doc.hirschmann.com (S3-backed PDF manual index), www.belden.io
+  (Belden Horizon console, login-only) answer 404; catalog.belden.com is an SPA catch-all that returns 200 text/html
+  for every path including the negative control, so its 200s are misses. hirschmann.com, developer.belden.com, api.belden.com
+  and beldenhorizon.com do not resolve in DNS. No WellKnown or SecurityTxt pointer is emitted: this file records
+  an absence, not a served surface.'
+hosts:
+- host: https://belden.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    location: https://www.belden.com/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 302
+    location: https://www.belden.com/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    location: https://www.belden.com/.well-known/oauth-authorization-server
+  - path: /.well-known/oauth-protected-resource
+    status: 302
+    location: https://www.belden.com/.well-known/oauth-protected-resource
+  - path: /.well-known/api-catalog
+    status: 302
+    location: https://www.belden.com/.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    location: https://www.belden.com/.well-known/ai-plugin.json
+  - path: /.well-known/agent-card.json
+    status: 302
+    location: https://www.belden.com/.well-known/agent-card.json
+  - path: /.well-known/agent.json
+    status: 302
+    location: https://www.belden.com/.well-known/agent.json
+  - path: /.well-known/apis.json
+    status: 302
+    location: https://www.belden.com/.well-known/apis.json
+  - path: /apis.json
+    status: 302
+    location: https://www.belden.com/apis.json
+  - path: /apis.yml
+    status: 302
+    location: https://www.belden.com/apis.yml
+  - path: /.well-known/belden-negative-control-4c1e9a7d.json
+    status: 302
+    location: https://www.belden.com/.well-known/belden-negative-control-4c1e9a7d.json
+- host: https://www.belden.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/apis.json
+    status: 404
+    content_type: text/html
+  - path: /apis.json
+    status: 404
+    content_type: text/html
+  - path: /apis.yml
+    status: 404
+    content_type: text/html
+  - path: /.well-known/belden-negative-control-4c1e9a7d.json
+    status: 404
+    content_type: text/html
+- host: https://www.doc.hirschmann.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/apis.json
+    status: 404
+    content_type: application/xml
+  - path: /apis.json
+    status: 404
+    content_type: application/xml
+  - path: /apis.yml
+    status: 404
+    content_type: application/xml
+  - path: /.well-known/belden-negative-control-4c1e9a7d.json
+    status: 404
+    content_type: application/xml
+- host: https://www.belden.io
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html
+  - path: /.well-known/apis.json
+    status: 404
+    content_type: text/html
+  - path: /apis.json
+    status: 404
+    content_type: text/html
+  - path: /apis.yml
+    status: 404
+    content_type: text/html
+  - path: /.well-known/belden-negative-control-4c1e9a7d.json
+    status: 404
+    content_type: text/html
+- host: https://catalog.belden.com
+  path_echo_control: 'FAILED (200 text/html for the negative-control path: SPA catch-all)'
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/agent.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/apis.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /apis.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /apis.yml
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss
+  - path: /.well-known/belden-negative-control-4c1e9a7d.json
+    status: 200
+    content_type: text/html
+    note: 200 text/html SPA catch-all shell (negative control also 200), treated as miss

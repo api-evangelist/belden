@@ -24,7 +24,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 created: '2026-03-23'
-modified: '2026-04-19'
+modified: '2026-09-18'
 type: Index
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/belden.png
 specificationVersion: '0.23'
@@ -136,9 +136,46 @@ common:
           lines for integration with network management systems and monitoring tools.
   - type: Integrations
     url: https://www.belden.com/partners
+  - type: Security
+    url: security/belden-vulnerability-disclosure.yml
+    title: Belden PSIRT vulnerability disclosure
+  - type: VulnerabilityDisclosure
+    url: security/belden-vulnerability-disclosure.yml
+  - type: Blog
+    url: https://www.belden.com/blog
+  - type: PrivacyPolicy
+    url: https://www.belden.com/privacy-policy
+  - type: TermsOfService
+    url: https://www.belden.com/privacy-policy/terms-of-use
 integrations:
   - name: Distributors
   - name: Ecosystem Partners
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-18'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: unreadable
+  reason: pdf-only-docs
+  detail: >-
+    Belden's programmable surfaces are on-device (Hirschmann HiOS CLI/SNMP/OPC UA, Lumberg LioN-X
+    IO-Link masters) and are documented only as 644 PDF manuals on www.doc.hirschmann.com; no OpenAPI,
+    YANG, WSDL or other spec file is served on any Belden host, the Belden Horizon console at
+    belden.io is login-only with no published API, and www.belden.com itself sits behind a Cloudflare
+    managed challenge for crawlers.
+  evidence:
+    - url: https://www.doc.hirschmann.com/
+      status: 200
+    - url: https://www.doc.hirschmann.com/openapi.json
+      status: 404
+    - url: https://www.belden.io/
+      status: 301
+    - url: https://www.belden.io/openapi.json
+      status: 404
+    - url: https://www.belden.com/products/industrial-networking-cybersecurity/software-solutions/device-software/hios-switch-software
+      status: 403
+  checked: '2026-09-18'

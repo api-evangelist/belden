@@ -1,11 +1,11 @@
-generated: '2026-07-11'
+generated: '2026-09-18'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
 - host: www.belden.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Aug 23 10:57:24 2026 GMT
+  cert_expires: Oct 21 16:02:38 2026 GMT
   hsts: true
   hsts_max_age: 31536000
 domains:
