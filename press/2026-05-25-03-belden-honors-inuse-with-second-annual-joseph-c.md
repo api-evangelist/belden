@@ -1,7 +1,9 @@
 ---
 title: Belden honors InUse with second annual Joseph C. ...
 url: https://www.businesswire.com/news/home/20250619566500/en/Belden-honors-InUse-with-second-annual-Joseph-C.-Belden-Innovation-Award
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Belden" press release artificial intelligence'
 position: 3
 source: serpapi-google

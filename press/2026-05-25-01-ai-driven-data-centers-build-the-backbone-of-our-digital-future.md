@@ -1,7 +1,9 @@
 ---
 title: AI-driven data centers build the backbone of our digital future
 url: https://www.belden.com/blog/ai-driven-data-centers-build-the-backbone-of-our-digital-future
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Belden" press release artificial intelligence'
 position: 1
 source: serpapi-google
