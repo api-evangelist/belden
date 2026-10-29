@@ -1,4 +1,4 @@
-# Belden (belden)
+# Belden
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,65 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Belden Inc. designs, manufactures, and markets networking, connectivity, and
-cable products and solutions for industrial automation, smart buildings, and
-broadcast markets. The company delivers end-to-end signal transmission
-solutions for mission-critical applications, including industrial Ethernet
-infrastructure, cybersecurity, and IIoT connectivity. Belden's Hirschmann
-brand is a leading provider of industrial network switches and management
-software with CLI, SNMP, and REST API interfaces for network device management.
+Belden Inc. designs, manufactures, and markets networking, connectivity, and cable products and solutions for industrial automation, smart buildings, and broadcast markets. The company delivers end-to-end signal transmission solutions for mission-critical applications, including industrial Ethernet infrastructure, cybersecurity, and IIoT connectivity. Belden's Hirschmann brand is a leading provider of industrial network switches and management software with CLI, SNMP, and REST API interfaces for network device management.
 
-**URL:** [https://www.belden.com](https://www.belden.com)
+**Areas:** Broadcast · Cable · Connectivity · Industrial Automation · Industrial Ethernet · Industrial IoT · Networking · Signal Transmission · Smart Buildings · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Belden on APIs.io
 
-## Tags:
+Everything profiled for Belden is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/belden/](https://apis.io/providers/belden/)** — or go straight to one of the APIs or properties below.
 
- - Broadcast, Cable, Connectivity, Industrial Automation, Industrial Ethernet, IIoT, Networking, Signal Transmission, Smart Buildings
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-03-23
-- **Modified:** 2026-04-19
+#### JSON-LD (1)
 
-## Common Properties
+Linked-data contexts for the provider's vocabulary.
+
+- [Belden Context](https://apis.io/jsonld/belden/belden-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Belden Industrial Networking Vocabulary](https://apis.io/vocabularies/belden/belden-vocabulary/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Belden Domain Security](https://apis.io/security/belden/belden-domain-security/)
+- [Belden Vulnerability Disclosure](https://apis.io/security/belden/belden-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.belden.com)
-- [Hirschmann Product Documentation](https://www.doc.hirschmann.com/)
-- [Hirschmann Technical Support](https://hirschmann-support.belden.com)
+- [Documentation](https://www.doc.hirschmann.com/)
+- [Support](https://hirschmann-support.belden.com)
+- [Blog](https://www.belden.com/blog)
+- [Terms of service](https://www.belden.com/privacy-policy/terms-of-use)
+- [Privacy policy](https://www.belden.com/privacy-policy)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Industrial Ethernet Networking | End-to-end industrial Ethernet infrastructure including managed switches, routers, and network access controllers for factory automation, process control, and critical infrastructure environments. |
-| IIoT Connectivity | IO-Link masters with direct IIoT communication protocols including OPC UA, MQTT, CoAP, and REST API for cloud-to-sensor connectivity in Industry 4.0 deployments. |
-| Network Management Software | Industrial HiVision network management system for configuration, monitoring, and management of SNMP-enabled devices across multi-vendor industrial networks. |
-| Cybersecurity Solutions | Industrial cybersecurity products and solutions including firewalls, intrusion detection, and secure remote access for operational technology (OT) networks. |
-| Signal Transmission | High-performance cable and connectivity products for broadcast, industrial, and enterprise signal transmission applications, including fiber optic and copper solutions. |
-| Single Pair Ethernet | SPE technology with Time Sensitive Networking (TSN) capability and Power over Data Lines (PoDL) for lightweight, low-EMI connectivity to field devices with up to 1000-meter reach. |
-| Hirschmann CLI and SNMP | Hirschmann industrial switches support command-line interface (CLI), SNMP, and REST API management interfaces for programmatic device configuration and monitoring via HiOS software. |
+**Kin Score 16.9** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 21.1 |
 
-| Name | Description |
-|------|-------------|
-| Industrial Automation Networking | Deploy ruggedized industrial Ethernet infrastructure to connect PLCs, sensors, and control systems in manufacturing plants and process facilities. |
-| IIoT Device Integration | Connect field-level sensors and actuators to cloud and enterprise systems using IO-Link masters with OPC UA, MQTT, and REST API protocols. |
-| Smart Building Networks | Build converged network infrastructure for building automation, security, lighting, and HVAC control systems using Belden structured cabling and active networking products. |
-| Broadcast Infrastructure | Deploy broadcast-grade signal distribution and connectivity solutions for live production, post-production, and media transport workflows. |
-| OT Network Security | Protect operational technology networks with industrial firewalls, secure remote access, and network segmentation solutions designed for OT environments. |
+**Agent readiness 0.0** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| OPC UA | Belden IO-Link masters and Hirschmann devices support OPC UA for secure, platform-independent data exchange between field devices and industrial applications. |
-| MQTT | MQTT protocol support in Belden IIoT devices for lightweight sensor data publishing to cloud platforms and industrial IoT brokers. |
-| SNMP | SNMP v1, v2c, and v3 support across Hirschmann industrial switch product lines for integration with network management systems and monitoring tools. |
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/belden/](https://apis.io/providers/belden/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Belden: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/belden/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
